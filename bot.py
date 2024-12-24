@@ -100,8 +100,8 @@ class BlumTod:
         )
 
     async def ipinfo(self):
-        ipinfo1_url = "https://ipapi.co/json/"
-        ipinfo2_url = "https://ipwho.is/"
+        ipinfo1_url = "https://freeipapi.com/api/json"
+        ipinfo2_url =  "https://ipapi.co/json/"
         ipinfo3_url = "https://freeipapi.com/api/json"
         headers = {"user-agent": "marin kitagawa"}
         try:
@@ -261,8 +261,8 @@ class BlumTod:
         friend_balance_url = "https://user-domain.blum.codes/api/v1/friends/balance"
         farming_claim_url = "https://game-domain.blum.codes/api/v1/farming/claim"
         farming_start_url = "https://game-domain.blum.codes/api/v1/farming/start"
-        if len(self.proxies) > 0:
-             await self.ipinfo()
+        # if len(self.proxies) > 0:
+        #      await self.ipinfo()
         uid = self.user.get("id")
         first_name = self.user.get("first_name")
         self.log(f"{green}login as {white}{first_name}")
